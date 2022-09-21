@@ -1,0 +1,71 @@
+html, body{
+	overflow-x: hidden;
+	font-family: "Open sans", sans-serif;
+	color: #000000;
+	text-decoration: none;
+}
+
+*,
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+	color: #00ff99;
+	position: relative;
+	text-decoration: none;
+}
+
+a.navbar-menu:after{
+	content: "";
+	position: absolute;
+	background-color: #ff3c78;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+
+a:hover{
+	color: #ffffff;
+}
+
+a.navbar-menu:hover:after{
+	width: 100%;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+}
+
+.navbar-menu{
+	margin: 11px;
+}
+
+.navbar-menu, .navbar-brand{
+	text-transform: uppercase;
+}
+
+.offcanvas-title{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.btn{
+	background-color: #00ff99;
+}
+
+.bg-img{
+	background: url('../images/background_4.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	height: 100%;
+}
